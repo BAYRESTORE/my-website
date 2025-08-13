@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false, // Matikan minify biar nggak pakai lightningcss
+  swcMinify: false, // Matikan minify
   experimental: {
-    optimizeCss: false, // Matikan CSS optimizer yang pakai lightningcss
+    optimizeCss: false, // Matikan CSS optimizer lightningcss
   },
 };
 
