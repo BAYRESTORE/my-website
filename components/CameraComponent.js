@@ -32,13 +32,4 @@ export default function CameraComponent() {
   return (
     <div className="flex flex-col items-center space-y-4">
       <video ref={videoRef} autoPlay playsInline className="w-full max-w-md rounded-lg" style={{ filter }} />
-      <div className="flex space-x-2">
-        <button onClick={() => setFilter('none')} className="px-3 py-1 border rounded">Normal</button>
-        <button onClick={() => setFilter('grayscale(100%)')} className="px-3 py-1 border rounded">B/W</button>
-        <button onClick={() => setFilter('sepia(100%)')} className="px-3 py-1 border rounded">Sepia</button>
-        <button onClick={() => setFilter('contrast(200%)')} className="px-3 py-1 border rounded">High Contrast</button>
-      </div>
-      <button onClick={takePhoto} className="px-4 py-2 bg-blue-500 text-white rounded">Ambil Foto</button>
-    </div>
-  )
-}
+      <div className="flex space-x-2
