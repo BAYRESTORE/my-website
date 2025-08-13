@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false, // Matikan minify
+
+  // Matikan penggunaan lightningcss di Termux/ARM
   experimental: {
-    optimizeCss: false, // Matikan CSS optimizer lightningcss
+    optimizeCss: false,
+    swcMinify: true,
   },
 };
 
