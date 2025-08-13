@@ -9,4 +9,4 @@ export default function PostCard({ username, image, caption }) {
       </div>
     </div>
   )
-}
+    }
