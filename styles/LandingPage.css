@@ -1,7 +1,65 @@
-.cta-button {
-  @apply px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.header-button {
-  @apply px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition;
+.header button {
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+}
+
+.header button:hover {
+  background-color: #2563eb;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #22c55e;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  background-color: #16a34a;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  color: #6b7280;
 }
