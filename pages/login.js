@@ -2,24 +2,18 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-        <form className="space-y-4">
-          <input type="email" placeholder="Email" className="w-full border p-3 rounded" />
-          <input type="password" placeholder="Password" className="w-full border p-3 rounded" />
-          <button className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600">Login</button>
+    <div style={{display:'flex',justifyContent:'center',alignItems:'center',minHeight:'100vh',background:'#f3f4f6'}}>
+      <div style={{background:'white',padding:'32px',borderRadius:'12px',boxShadow:'0 2px 10px rgba(0,0,0,0.1)',width:'100%',maxWidth:'400px'}}>
+        <h2 style={{textAlign:'center',marginBottom:'24px'}}>Login</h2>
+        <form style={{display:'flex',flexDirection:'column',gap:'16px'}}>
+          <input type="email" placeholder="Email" style={{padding:'12px',borderRadius:'8px',border:'1px solid #d1d5db'}}/>
+          <input type="password" placeholder="Password" style={{padding:'12px',borderRadius:'8px',border:'1px solid #d1d5db'}}/>
+          <button style={{padding:'12px',backgroundColor:'#3b82f6',color:'white',borderRadius:'8px'}}>Login</button>
         </form>
-        <div className="mt-4 text-center">
-          <Link href="/forgot-password" className="text-blue-500 hover:underline">
-            Lupa Password?
-          </Link>
-        </div>
-        <div className="mt-2 text-center">
-          Belum punya akun?{" "}
-          <Link href="/register" className="text-blue-500 hover:underline">Daftar</Link>
+        <div style={{marginTop:'16px',textAlign:'center'}}>
+          <Link href="/">Kembali ke Landing Page</Link>
         </div>
       </div>
     </div>
   );
-    }
+}
