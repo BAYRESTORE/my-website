@@ -2,17 +2,18 @@ import Link from "next/link";
 
 export default function ForgotPassword() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-6">Lupa Password</h2>
-        <form className="space-y-4">
-          <input type="email" placeholder="Email" className="w-full border p-3 rounded" />
-          <button className="w-full bg-yellow-500 text-white p-3 rounded hover:bg-yellow-600">
-            Kirim Link Reset
-          </button>
+    <div style={{display:'flex', justifyContent:'center', alignItems:'center', minHeight:'100vh', background:'#f3f4f6'}}>
+      <div style={{background:'white', padding:'32px', borderRadius:'12px', boxShadow:'0 2px 10px rgba(0,0,0,0.1)', width:'100%', maxWidth:'400px'}}>
+        <h2 style={{textAlign:'center', marginBottom:'24px'}}>Forgot Password</h2>
+        <form style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+          <input type="email" placeholder="Masukkan Email" style={{padding:'12px', borderRadius:'8px', border:'1px solid #d1d5db'}}/>
+          <button style={{padding:'12px', backgroundColor:'#3b82f6', color:'white', borderRadius:'8px'}}>Kirim Link Reset</button>
         </form>
-        <div className="mt-4 text-center">
-          <Link href="/login" className="text-blue-500 hover:underline">Kembali ke Login</Link>
+        <div style={{marginTop:'16px', textAlign:'center', fontSize:'0.9rem'}}>
+          <Link href="/login">Kembali ke Login</Link>
+        </div>
+        <div style={{marginTop:'8px', textAlign:'center'}}>
+          <Link href="/">Kembali ke Landing Page</Link>
         </div>
       </div>
     </div>
